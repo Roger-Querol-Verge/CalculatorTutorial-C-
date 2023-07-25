@@ -3,18 +3,28 @@
 
 #include <iostream>
 #include "Calculator.h"  
+#include <string>;
 
 using namespace std;
 
 int main()
 {
+    const float PI = 3.1416;    //Solo de lectura
+    string nombre;
     double x = 0.0;
     double y = 0.0;
     double result = 0.0;
     char oper = '+';
+    string salidaNombre = "Please write your name:";
+    string salidaCalc = "Please enter the operation to perform. Format: a+b | a-b | a*b | a/b. Numero PI: ";
+    
+
+    printf("%s \n", salidaNombre.c_str());
+    getline(cin, nombre);
+    cout << "Bienvenido al sistema " << nombre << ". Gracias por usar nuestra aplicación" << "\n";
 
     cout << "Calculator Console Aplication" << endl << endl;
-    cout << "Please enter the operation to perform. Format: a+b | a-b | a*b | a/b" << endl;
+    printf("%s %5.4f \n", salidaCalc.c_str(), PI);
 
     Calculator c;
     while (true)
