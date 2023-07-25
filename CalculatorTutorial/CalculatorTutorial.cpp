@@ -21,7 +21,7 @@ int main()
 
     printf("%s \n", salidaNombre.c_str());
     getline(cin, nombre);
-    cout << "Bienvenido al sistema " << nombre << ". Gracias por usar nuestra aplicación" << "\n";
+    cout << "Welcome " << nombre << ". Thanks for using the App" << "\n";
 
     cout << "Calculator Console Aplication" << endl << endl;
     printf("%s %5.4f \n", salidaCalc.c_str(), PI);
